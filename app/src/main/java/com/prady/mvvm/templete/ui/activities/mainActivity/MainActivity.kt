@@ -1,8 +1,10 @@
 package com.prady.mvvm.templete.ui.activities.mainActivity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import com.crowdfire.cfalertdialog.CFAlertDialog
 import com.prady.mvvm.templete.R
 import com.prady.mvvm.templete.databinding.ActivityMainBinding
 import com.prady.mvvm.templete.ui.activities.mainActivity.fragments.HomeFragment
@@ -24,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         preferenceManager.userName = "Prady"
         Log.e("pref_test", preferenceManager.userName.toString())
 
-        if(savedInstanceState == null){
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
-        }
+//        if(savedInstanceState == null){
+//            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
+//        }
 
         connectionLiveData = ConnectionLiveData(this)
         connectionLiveData.observe(this) { isNetworkAvailable ->
@@ -39,8 +41,21 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI(it: Boolean) {
         if(it){
             Log.e("Network", "Available")
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
         }else{
             Log.e("Network", "Not Available")
+
+            CFAlertDialog.Builder(this)
+                .setDialogStyle(CFAlertDialog.CFAlertStyle.ALERT)
+                .setHeaderView(R.layout.dialog_header_no_connection)
+                .setTitle("No Internet Connection")
+                .setMessage("Please check your internet connection")
+                .addButton("Dismiss", -1, -1,
+                    CFAlertDialog.CFAlertActionStyle.NEGATIVE,
+                    CFAlertDialog.CFAlertActionAlignment.JUSTIFIED
+                ) { dialog: DialogInterface, which: Int -> dialog.dismiss() }
+                .show()
+
         }
     }
 }
