@@ -1,10 +1,19 @@
+/*
+ * *
+ *  * Created by prady on 3/29/22, 1:32 PM
+ *  * Copyright (c) 2022 . All rights reserved.
+ *  * Last modified 3/29/22, 12:37 PM
+ *
+ */
+
 package com.prady.srmgpc_user.helpers
 
 import android.content.Context
 import android.content.SharedPreferences
 
 class PreferenceManager(var context: Context) {
-    var sharedPreferences: SharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+    var sharedPreferences: SharedPreferences =
+        context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
     var editor: SharedPreferences.Editor = sharedPreferences.edit()
 
     companion object {

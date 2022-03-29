@@ -1,4 +1,12 @@
-package com.prady.mvvm.templete.ui.activities.mainActivity
+/*
+ * *
+ *  * Created by prady on 3/29/22, 1:32 PM
+ *  * Copyright (c) 2022 . All rights reserved.
+ *  * Last modified 3/29/22, 1:02 PM
+ *
+ */
+
+package com.prady.mvvm.templete.ui.mainActivity
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -7,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.crowdfire.cfalertdialog.CFAlertDialog
 import com.prady.mvvm.templete.R
 import com.prady.mvvm.templete.databinding.ActivityMainBinding
-import com.prady.mvvm.templete.ui.activities.mainActivity.fragments.HomeFragment
+import com.prady.mvvm.templete.ui.mainActivity.fragments.HomeFragment
 import com.prady.mvvm.templete.utils.ConnectionLiveData
 import com.prady.srmgpc_user.helpers.PreferenceManager
 
