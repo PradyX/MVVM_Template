@@ -5,7 +5,7 @@ import com.prady.srmgpc_user.helpers.Constraints
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitClient {
+object RetrofitHelper {
     fun getInstance() : Retrofit {
         return Retrofit.Builder()
             .baseUrl(Constraints.BaseUrl)
