@@ -15,9 +15,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.crowdfire.cfalertdialog.CFAlertDialog
 import com.prady.mvvm.template.R
 import com.prady.mvvm.template.databinding.ActivityMainBinding
+import com.prady.mvvm.template.helpers.PreferenceManager
 import com.prady.mvvm.template.ui.mainActivity.fragments.HomeFragment
 import com.prady.mvvm.template.utils.ConnectionLiveData
-import com.prady.srmgpc_user.helpers.PreferenceManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        preferenceManager = PreferenceManager(this)
-        preferenceManager.userName = "Prady"
-        Log.e("pref_test", preferenceManager.userName.toString())
+        preferenceManager = PreferenceManager.instance
+        preferenceManager.userid = "123"
+        Log.e("pref_test", preferenceManager.userid.toString())
 
 //        if(savedInstanceState == null){
 //            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
