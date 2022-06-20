@@ -1,3 +1,11 @@
+<!--
+  ~ /**
+  ~  * Created by prady on 6/20/22, 10:45 PM
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 6/20/22, 10:44 PM
+  ~  */
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="128dp"
     android:height="128dp"
