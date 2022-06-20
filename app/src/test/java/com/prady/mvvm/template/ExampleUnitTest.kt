@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete
+package com.prady.mvvm.template
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

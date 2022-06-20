@@ -6,14 +6,14 @@
  *
  */
 
-package com.prady.mvvm.templete.ui
+package com.prady.mvvm.template.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.prady.mvvm.templete.databinding.ActivitySplashBinding
-import com.prady.mvvm.templete.ui.mainActivity.MainActivity
+import com.prady.mvvm.template.databinding.ActivitySplashBinding
+import com.prady.mvvm.template.ui.mainActivity.MainActivity
 
 class SplashActivity : AppCompatActivity() {
     var binding: ActivitySplashBinding? = null

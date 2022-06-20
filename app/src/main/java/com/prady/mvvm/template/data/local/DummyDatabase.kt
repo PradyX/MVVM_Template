@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete.data.local
+package com.prady.mvvm.template.data.local
 
 import android.content.Context
 import androidx.room.Database

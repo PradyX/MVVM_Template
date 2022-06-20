@@ -16,7 +16,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.prady.mvvm.templete"
+        applicationId "com.prady.mvvm.template"
         minSdk 21
         targetSdk 32
         versionCode 1

@@ -6,13 +6,13 @@
  *
  */
 
-package com.prady.mvvm.templete.ui.mainActivity.fragments
+package com.prady.mvvm.template.ui.mainActivity.fragments
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.prady.mvvm.templete.data.local.Dummy
-import com.prady.mvvm.templete.repository.DummyRepository
+import com.prady.mvvm.template.data.local.Dummy
+import com.prady.mvvm.template.repository.DummyRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
