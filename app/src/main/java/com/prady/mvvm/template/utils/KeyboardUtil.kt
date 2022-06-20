@@ -1,3 +1,11 @@
+/*
+ * *
+ *  * Created by prady on 6/20/22, 9:57 PM
+ *  * Copyright (c) 2022 . All rights reserved.
+ *  * Last modified 6/20/22, 9:46 PM
+ *
+ */
+
 package com.prady.mvvm.template.utils
 
 import android.content.Context
