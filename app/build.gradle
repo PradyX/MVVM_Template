@@ -51,6 +51,9 @@ android {
     kapt {
         correctErrorTypes = true
     }
+    lint {
+        abortOnError false
+    }
 }
 
 dependencies {
